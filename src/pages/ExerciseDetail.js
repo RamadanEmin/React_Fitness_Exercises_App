@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchData';
+import Detail from '../components/Detail';
 
 const ExerciseDetail = () => {
     const [exerciseDetail, setExerciseDetail] = useState({});
@@ -20,7 +21,9 @@ const ExerciseDetail = () => {
     }, [id]);
 
     return (
-        <Box></Box>
+        <Box>
+            <Detail exerciseDetail={exerciseDetail} />
+        </Box>
     );
 };
 
