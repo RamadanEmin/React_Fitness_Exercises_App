@@ -5,10 +5,13 @@ import { Box } from '@mui/material';
 import { exerciseOptions, youTubeOptions, fetchData } from '../utils/fetchData';
 import Detail from '../components/Detail';
 import ExerciseVideos from '../components/ExerciseVideos';
+import SimularExercises from '../components/SimularExercises';
 
 const ExerciseDetail = () => {
     const [exerciseDetail, setExerciseDetail] = useState({});
     const [exerciseVideos, setExerciseVideos] = useState([]);
+    const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
+    const [equipmentExercises, setEquipmentExercises] = useState([]);
     const { id } = useParams();
 
     useEffect(() => {
@@ -36,6 +39,7 @@ const ExerciseDetail = () => {
         <Box>
             <Detail exerciseDetail={exerciseDetail} />
             <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
+            <SimularExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises}/>
         </Box>
     );
 };
