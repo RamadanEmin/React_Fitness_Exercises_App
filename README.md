@@ -1,7 +1,7 @@
 ## React_Fitness_Exercises_App 
 
 You can view the site here
-[Click Me](era-gym-app.netlify.app)
+[Click Me](https://era-gym-app.netlify.app/)
 
 
 ## Table of Contents
