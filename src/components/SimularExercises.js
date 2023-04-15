@@ -6,6 +6,7 @@ import Loader from './Loader';
 
 const SimularExercises = ({ targetMuscleExercises, equipmentExercises }) => {
 
+
     return (
         <Box sx={{ mt: { lg: '100px', xs: '0' } }} p="20px">
             <Typography variant="h3" mb={5}>
